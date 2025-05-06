@@ -1,0 +1,16 @@
+while True:
+    ettor = input("Antal ettor? ")
+    tvåor = input("Antal tvåor? ")
+    treor = input("Antal treor? ")
+    fyror = input("Antal fyror? ")
+
+    ettor_värde = ettor
+    tvåor_värde = tvåor * 2
+    treor_värde = treor * 3
+    fyror_värde = fyror * 4
+
+    totalt_värde = ettor_värde + tvåor_värde + treor_värde + fyror_värde
+
+    lag1 = totalt_värde/2
+
+    

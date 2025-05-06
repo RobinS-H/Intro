@@ -1,0 +1,21 @@
+while True:
+    antal = 0
+    N = str(input("Vad är talet N? "))
+
+    if N.isdigit() == True:
+        N = int(N)
+        if N <= 0:
+            print("Skriv ett positivt tal.")
+            continue
+    else:
+        print("Skriv ett nummer.")
+        continue
+
+    
+    for i in range(N):
+        tal = i * (i +1) * (i +2)
+        if tal == int(tal) and tal < N and i > 0:
+            print(f"{tal} är treigt, ({i}, {i + 1}, {i + 2})")
+            antal = antal + 1
+    
+    print(f"Det finns totalt {antal} treiga tal under nummret {N}")
